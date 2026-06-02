@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw; 
+    background-color: gray;
+}
+
+.container{
+    height: 50vw;
+    width: 50vw;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    /* instead of writing 1fr 8 times, we can use repeat function */
+    grid-template-columns: repeat(8,1fr);
+
+} 
+
+.white{
+    background-color: white;
+} 
+
+.black{
+    background-color: black;
+}

@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(215, 46, 46);
+    padding: 1rem 0rem;
+    
+} 
+
+.head h1{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-left: 2rem;
+} 
+
+.second{
+    display: flex;
+}
+
+.second button{
+    background-color:rgb(215, 46, 46) ;
+    border: none;
+    color: white;
+    padding: 0rem 0.8rem;
+    font-size: 1rem; 
+    cursor: pointer;
+} 
+
+.searching{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(170, 160, 160);
+    padding: 0.5rem;
+} 
+
+.search{
+    width: 20rem;
+    height: 1.5rem;
+    border: 2px skyblue solid;
+    border-radius: 0.8rem; 
+    text-indent: 10px; 
+    max-width: 60%;
+} 
+
+.searchbutton{
+    height: 1.5rem;
+    width: 4rem;
+    margin-left: 1rem;
+    background-color: rgb(215, 46, 46);
+    border: 1px solid rgb(52, 50, 50);
+    border-radius: 0.5rem;
+    color: white;
+    cursor: pointer;
+} 
+
+.top{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./img1.jpg);
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+} 
+
+.top > h2{
+    color: white;
+    background-color: black;
+    margin-bottom: 0.8rem;
+    width: 28rem;
+    align-self: center;
+    font-size: 1.5rem;
+    height: 2rem;
+    
+} 
+
+.top >button{
+    height: 2rem;
+    width: 5rem;
+    align-self: center;
+    font-size: 1rem;
+    background-color:rgb(215, 46, 46) ;
+    color: white;
+    border-radius: .5rem; 
+    cursor: pointer;
+}  
+
+.mainheading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+} 
+
+.cards{
+    display: flex;
+    overflow-x: auto;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(237, 221, 221);
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.box >img{
+    height: 20rem;
+    width: 13rem;
+    border-radius: 1rem;     
+} 
+
+.box > h3{
+    padding: 5px;
+    font-size: 1.3rem;
+    align-self: center;
+} 
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+} 
+
+.bottom > img{
+    /* justify-content: center; */
+    max-width: 80%;
+} 
+
+/* For Mobile Phones */
+
+@media (max-width:500px){
+    .head{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+
+    .second {
+        flex-direction: column;
+    } 
+
+    .top > h2{
+        font-size: 1rem;
+        max-width: 50%;
+        height: auto;
+    } 
+
+    .cards{
+        flex-direction: column;
+    } 
+
+    .head h1{
+        padding: 0px;
+    }
+
+}
+

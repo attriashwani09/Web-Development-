@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    height: 100vh;
+    width: 100vw; 
+    padding: 4rem;
+} 
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr); 
+
+}  
+
+.box{
+    
+    background-color: orange;
+    border: 5px solid black;
+    height: 150px;
+    width: 150px;
+    font-size: 2rem;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+
+} 
+
+.Box1:hover{
+    transform: rotateX(180deg);
+}
+
+.Box2:hover{
+    transform: rotatey(180deg);
+} 
+
+.Box3:hover{
+    transform: rotatez(180deg);
+} 
+
+.Box4:hover{
+    transform: translatex(100px);
+}
+
+.Box5:hover{
+    transform: translatey(100px);
+} 
+
+.Box6:hover{
+    transform: perspective(300px) translatez(200px);
+} 
+
+.Box7:hover{
+    transform: scaleX(2);
+} 
+
+.Box8:hover{
+    transform: scaley(2);
+}  
+
+.Box9:hover{
+    transform: rotatey(60deg) scaleZ(2) perspective(200px);
+} 
+
+
+
+/* 3d transformation */
+
+/*1.rotate: Rotatex , rotatey , rotatez */
+
+/* 2. translate: translatex ,translatey  */
+/* For translatez we can not see it directly, so we have to give it a perpective */
+
+/* 3. Scale : scaleX , scaleY, ScaleZ */
+
+
+
+

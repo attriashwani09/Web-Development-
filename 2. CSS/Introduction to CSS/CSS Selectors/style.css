@@ -1,0 +1,26 @@
+/*  1. Element  Selector */
+h1{
+    color: aquamarine;
+    background-color: black;
+} 
+
+/* 2. Class Selector */
+.para{
+
+    color: orange;
+    background-color: gray;
+} 
+
+/* 3. Id selector */
+#list{
+    color: red;
+} 
+
+/* 4. Universal Selector : selects the whole web page at once*/
+/* body{
+    background-color: yellowgreen;
+} */ 
+ /* or */
+ *{
+    background-color: yellowgreen;
+ }

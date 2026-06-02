@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Health Details Form</h1>
+    <form action="">
+        <!-- Personal Details section -->
+         <fieldset>
+            <legend>Personal Information</legend>
+
+            <!-- Name -->
+            <label for="name">Full Name : </label> 
+            <input type="text" name="fname" id="name">
+            <br> <br>
+
+            <!-- DOB -->
+            <label for="DOB">Date of Birth :</label>
+            <input type="date" name="DOB" id="DOB"> 
+            <br> <br>
+
+            <!-- Gender -->
+            <label for="gender">Gender</label>
+            <select name="Gender" id="gender"> 
+                <option value="" selected disabled>Select your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+            </select> 
+            <br> <br>
+
+            <!-- Phone Number -->
+             <label for="num">Phone Number:</label>
+             <input type="number" name="Phone" id="num">
+         </fieldset> 
+
+         <!-- 2nd fieldset Medical History -->
+
+         <fieldset>
+            <legend>Medical History</legend>
+
+            <!-- Blood Group -->
+             <label for="blood">Blood Group:</label>
+             <select name="bloodGroup" id="blood">
+                <option value="A+">A+</option>
+                <option value="B+">B+</option>
+                <option value="A-">A-</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                
+             </select>  
+             <br> <br>
+
+             <!-- lenses info -->
+              <label for="">Do you wear contact lenses ?</label> 
+              <br>
+              <input type="radio" name="lenses" id="yes" value="Yes">
+              <label for="yes">Yes</label>
+              <br>
+              <input type="radio" name="lenses" id="No" value="No"> 
+              <label for="No">No</label> 
+              <br> <br>
+
+              <!-- Pre existing condition details -->
+               <label for="preDetail">Pre-existing Conditions:</label> 
+               <br>
+               <textarea name="Pre-existing Conditions" id="preDetail" rows="5" cols="60" placeholder="List any Pre-existing Medical conditions"></textarea>
+               <br> <br> 
+
+               <!-- Allergies if any -->
+                <label for="">Allergies :</label>
+                <br>  
+                <input type="checkbox" name="Pollen" id="pollen"> 
+                <label for="pollen">Pollen</label>
+                <br> 
+                <input type="checkbox" name="Peanuts" id="peanuts"> 
+                <label for="peanuts">Peanuts</label>
+                <br>
+                <input type="checkbox" name="Latex" id="latex"> 
+                <label for="latex">Latex</label>
+                <br>
+                <input type="checkbox" name="None" id="None"> 
+                <label for="None">None</label> 
+                <br>
+                <br> 
+                <label for="curr">Current Medications :</label>
+                <br> 
+                <textarea name="curr-med" id="curr" rows="5" cols="60" placeholder="List any Current Medications"></textarea>
+               <br> <br> 
+
+         </fieldset> 
+
+         <!-- 3rd fieldset Emergency Contact -->
+
+         <fieldset>
+            <legend>Emergency Contact</legend>  
+
+            <!-- Emergency contact Name -->
+            <label for="emgcont">Emergency Contact Name :</label> 
+            <input type="text" name="Emergencyname" id="emgcont">
+            <br> <br> 
+
+            <!-- Emergency Contact Phone NUmber --> 
+             <label for="emnum">Emergency Contact Phone :</label> 
+             <input type="number" name="Emergencynum" id="emnum">
+             <br> <br>
+
+             <!-- Relationship to emergency contact -->
+              <label for="Rel">Relationship to Emergency Contact :</label>
+              <input type="text" name="relEmg" id="Rel">
+              
+         </fieldset> 
+         <br>
+
+         <!-- Submit Button -->
+         <button>Submit</button>
+    </form>
+</body>
+</html>

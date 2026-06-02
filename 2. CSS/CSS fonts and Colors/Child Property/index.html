@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <p>
+        <div>
+            Hello world 1
+        </div>
+    </p> 
+    <!-- If we try to change the color by using child selector then it will not changed. because both p and div are block elements and it is not supperted in html to have a block elements as child .(since div is conatiner and also a block element ). Only inline elements are allowed as a child. --> 
+
+    <div>
+        <p>Hello world 2</p>
+    </div> 
+
+    <!-- now if we try to change the color now then it would get changed because div (container) is allowed to have a block child.-->
+    
+</body>
+</html>

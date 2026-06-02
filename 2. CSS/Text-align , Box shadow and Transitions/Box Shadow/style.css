@@ -1,0 +1,35 @@
+.container{
+    height: 700px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+
+    /* box-shadow: 10px 15px;  */
+    /* horzontal(+ve for right) and vertical(+ve for bottom) */
+
+    /* box-shadow: -10px -15px; */
+     /* horzontal(-ve for left) and vertical(-ve for top) */
+
+     /* box-shadow: 10px 20px 12px; */
+     /* blur-radius added 12px*/
+
+     /* box-shadow: 10px 20px 12px red; */
+     /* color added */
+
+     /* box-shadow: 10px 20px 12px 25px black ; */
+     /* spread radius added 25px */
+
+     /* box-shadow: inset 10px 20px 12px; */
+     /* inset creates a shodow innside content */
+
+
+     /* To give shadows to all directions */
+     box-shadow: 0px 0px 5px 20px;
+}

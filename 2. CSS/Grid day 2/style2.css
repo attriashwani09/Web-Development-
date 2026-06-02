@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    height: 100vh;
+    width: 100vw;
+} 
+
+.container{
+    height: 100%;
+    background-color: gray;
+    display: grid; 
+    padding: 3rem;
+    gap: 1rem; 
+
+    /* Remove temp-row and temp-col if using 1st way */
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr); 
+    
+} 
+
+.box{
+    background-color: green;
+    font-size: 2rem;
+} 
+
+.box3 , .box5 , .box7{
+    background-color: red;
+} 
+
+.box4 , .box8{
+    background-color: orange;
+}   
+
+/* Also remove them when using 1st method */
+.box1{
+    grid-row: 1/4;
+} 
+
+.box2{
+    grid-column: 2/4;
+} 
+
+.box6{
+    grid-row: 2/4;
+    grid-column: 4/5;
+}  
+
+/*  To make website responsive  */
+/* 1st way is using media (Use mobile first method)*/
+
+/* @media (min-width:500px){
+    .container{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr); 
+    } 
+
+    .box1{
+    grid-row: 1/4;
+    } 
+
+    .box2{
+    grid-column: 2/4;
+    } 
+
+    .box6{
+    grid-row: 2/4;
+    grid-column: 4/5;
+    }  
+}  */
+
+
+
+    
+

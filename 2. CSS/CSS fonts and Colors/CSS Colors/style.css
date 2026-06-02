@@ -1,0 +1,60 @@
+/* 1. Using name */
+/* h1{
+    color: blue;
+}  */
+
+/* 2. Using rgb (RED,Green,Blue) */ 
+/* Values should be between 0-255 */ 
+ /*this will consume 8 bits for each color  */
+ul{
+    color: rgb(233, 135, 7);
+}   
+
+/* 3. Using Hexadecimal */
+/* Hexadecimal values contains 6 values between 0-9 and a to f */  
+/* The 1st 2 numbers represents Red,next 2 Green and next 2 Blue. */
+/* it will consume 4 byte for each color (total 24 byte) */
+h2{
+  color: #e41111;  
+}  
+
+/* 4. Using  HSL */
+/* HSL means Hue,Saturation,Lightness */ 
+/* Value of H should be between 0-360 and S,L should be in percentage between 0% to 100%. */ 
+ol{
+    color: hsl(319, 84%, 47%);
+} 
+
+/* 5. Alpha (transparent to opaque) */ 
+/* WE can use alpha int 2nd,3rd ,4th method */
+/* for 2nd and 4th method just use a after rgb or hsl  (rgba or hsla)*/ 
+/* The value should be between 0 to 1 (eg 0.7)  */ 
+/* and for 3rd hexadecimal m,ethod just add 2 more hexadecal number after those 6 numbers . The last 2 will represent alpha.  */ 
+h1{
+    color: rgba(19, 4, 152, 0.5);
+}  
+
+
+/* 6. Changing Background color */ 
+/* we can also use image as backgroud but we have to set its cover size otherwise the images will get repeated. */  
+body{
+    /* background-color: blanchedalmond; */
+    background-image: url(./img1.jpg); 
+    background-size: cover; 
+
+    /* also study about back */
+    /* background-repeat: no-repeat; */
+    
+}  
+
+
+
+
+
+
+
+
+
+
+
+

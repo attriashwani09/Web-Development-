@@ -1,0 +1,12 @@
+h1{
+    background-color: red !important;
+} 
+
+/* 3. Type (Origin) */
+/* HHIGHEST TO LOWEST */
+/* a). Inline : It has the highest priority
+   b). Internal And External Css have the same priority
+  (Whichever comes at later wins.) */ 
+
+/* !important :If you use !important, that rule gets top priority, overriding normal rules (but still respects specificity). */
+

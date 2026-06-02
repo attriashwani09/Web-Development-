@@ -1,0 +1,52 @@
+/* 1. Order: (In css if 2 or more types of same attributes are used for a single element, then whichever comes aat last will be preffered(used) ) */ 
+
+/* means, If two selectors have the same importance and specificity, the later one in the stylesheet wins. */
+
+h1{
+    background-color: red;
+} 
+
+h1{
+    background-color: burlywood;
+}  
+/* Here theere are 2 diiferent background colors for h1 , then the color that came at second  means burlywood should be preffered. */ 
+
+
+
+/* 2. Specificity: ID > Attribute > Class > (Decendant & child) > (Elements and Group Elements)*/  
+
+/* ID */ 
+/* It have the highest priority */
+/* #first{
+    background-color: red;
+}  */
+
+
+/* Attribute */ 
+/* Attributes have 2nd highest priority after class */
+/* p[draggable="true"]{
+    background-color: aqua;
+}  */
+
+/* Class */
+/* After attribute class comes. */
+/* .First_class{
+    background-color: brown;
+}  */
+
+/* Decendant and child have same priority. Which comes at the end wins. */ 
+
+/* Decendant */
+body p{
+    background-color: blue;
+}  
+
+/* Child */
+body > p{
+    background-color: chartreuse;
+} 
+
+/* At last Elements and group Elements have same priority.  
+Whichever comes at end wins.
+*/
+

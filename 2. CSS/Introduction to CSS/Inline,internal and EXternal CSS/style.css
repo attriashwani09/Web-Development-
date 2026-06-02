@@ -1,0 +1,9 @@
+h1{
+    color: aqua;
+    background-color: black;
+} 
+
+p,ul{
+    color: grey;
+    background-color: black;
+}

@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+}
+
+.first{
+    height: 40vh;
+    width: 40vh;
+    background-color: red; 
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 30vh;
+}

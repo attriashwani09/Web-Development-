@@ -1,0 +1,65 @@
+.container{
+    background-color: blanchedalmond;
+    margin-left: 300px;
+    margin-top: 200px;
+    /* position: relative; */
+    height: 1000px;
+} 
+
+.newcontainer{
+    height: 800px;
+    background-color: chocolate;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    
+} 
+
+.box1{
+    background-color: red;
+} 
+
+.box2{
+    background-color: green;
+    /* position: relative;
+    top: 30px;
+    left: 30px; */
+
+    position: absolute;
+    /* z-index: -1; */
+    top: 10px;
+    left: 10px; 
+
+    /* position: fixed;
+    top: 20px; */
+
+    /* position: sticky;
+    top: 10px;  */
+    
+} 
+
+.box3{
+    background-color: yellow;
+} 
+
+.box4{
+    background-color: orange;
+} 
+
+/* Positions  */
+/* 1. Static : By default Position  of any element is static */
+/* 2. Relative : Position of any element can be changed relatively to the original position of element.*/
+                 /* The original space will remain there.  */
+                /* there are 4 functionalities through which we can change the position. */
+                /* 1. left  2. right  3. top  4. bottom */
+/* 3. Absolute : The element will firstly leave its space. Another element can use that space. */
+                /* there are 4 functionalities through which we can change the position. */
+                /* 1. left  2. right  3. top  4. bottom */
+               /* Now  , if we try to change the position using any functiionailty, firstly it will check the position of its parent tag. If its parent tag has a predescribed position, then the position of that element would change relatively to the position of parent tag.*/
+               /* else the position will be cahnged by the relativeness of the viewport. */
+
+/* 4. Fixed : The position will become fixed and it would be changed relatively to the viewport. */
+/* 5. Sticky: The position will remain fix only in the parent class. */

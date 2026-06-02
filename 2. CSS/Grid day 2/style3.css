@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    height: 100vh;
+    width: 100vw;
+} 
+
+.container{
+    height: 100%;
+    background-color: gray;
+    display: grid; 
+    padding: 3rem;
+    gap: 1rem; 
+
+    /* grid-template-columns: repeat(4,1fr); */
+
+    /* grid-template-columns: minmax(100px,200px) minmax(100px,200px) minmax(100px,200px) minmax(100px,200px); */
+    /* grid-template-columns: repeat(4,minmax(100px,200px)); */
+
+    /* Using autofill or autofit */
+     grid-template-columns: repeat(auto-fill,minmax(100px,200px));
+
+     
+    
+} 
+
+.box{
+    background-color: green;
+    font-size: 2rem;
+}  
+
+/* minmax()  the 1st value 100px tells the minimum width of col and 2nd tells the maximim*/
+/* it is used to make the website responsive */

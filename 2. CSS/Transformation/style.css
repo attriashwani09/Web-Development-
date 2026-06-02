@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    height: 100vh;
+    width: 100vw;
+} 
+
+.container{
+    height: 100%;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} 
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    font-size: 4rem;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: linear;
+} 
+
+.box:hover{
+    /* transform: translate(400px); */
+    /* transform: translate(-400px); */
+    /* transform: translate(0,400px); */
+    /* transform: translate(200px,-400px); */
+
+    /* transform: scale(2); */
+    /* transform: scale(3,2); */
+    /* transform: scale(2,1); */
+    /* transform: scale(1,2); */ 
+
+    /* transform: rotate(180deg); */
+    /* transform: rotate(-180deg); */
+
+    /* transform: skew(60deg); */
+    /* transform: skew(-60deg); */
+    /* transform: skew(20deg, 10deg); */
+
+    /* Chaining transform */
+    /* transform: translate(100px, 200px) scale(2) rotate(50deg); */
+
+    transform: rotate(60deg);
+    transform-origin: bottom right;
+} 
+
+
+/* TRamsformation */
+
+/* 1. translate : moves the box/element left/right or both from its position. */
+/* single value :translate x-axis */
+/* Double value :translate x-axis,y-axis */
+/* x-axis positive :left , else if negative then right */
+/* y-axis  positive : bottom else top*/ 
+
+/* 2. scale() : it resizes the element accordingly to the provided size input */
+/* If given single value like 1st example , then it resizes the element in both x-axis and y-axis*/
+/* If given both value then 1st value for x-axis and 2nd value for y-axis */ 
+
+/* 3. rotate : it rotates the elememt */
+/* if positive value, then element rotates clock-wise direction else anti-clockwise direction */ 
+
+/* 4. skew(): it tilts the element along x-axis and y-axis.*/
+
+/* 5.Chianing transfrom : we can use multiple transform values at once*/
+
+/* 6.transform-origin : Defines the point from which the transformation starts (pivot point). */
+
+
+
+
+

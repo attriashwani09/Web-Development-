@@ -1,0 +1,48 @@
+/* font family is used to change font style */
+/* In font family the last one is Parent and remaining are its child. */  
+
+/* Ways to  change font size */
+
+/* 1. pixel :The size of pixel will be determined by screen size */
+
+h1{
+    font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+
+    font-size: 50px;
+
+} 
+
+
+/* 2. em*/
+/* em means size sill be dtermeined by parent tag (for this body ) */ 
+/* 5em means 5 times bigger font size than body font size. */
+h2{
+
+    font-size: 5em;
+}  
+
+/* 3. rem : If we use rem, then size of font would be determined by HTML tags deafult size .  */ 
+
+/* 4. using percentage */ 
+/* % also means size sill be dtermeined by parent tag (for this body ) */  
+
+ol{
+    font-size: 150%;
+}  
+
+/* 5. vw -veieport-width (THe font size will automatically set upto width of device/screen) */
+/* p{
+    font-size: 10vw;
+}  */
+
+/* 6. vh -veieport-height (THe font size will automatically set upto height of device/screen) */
+p{
+    font-size: 10vh;
+} 
+
+
+
+
+
+
+

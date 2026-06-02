@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- inline elements only take the space that they actually needed and the rest or remianing space of that line can be further used by other inline elements  -->
+     <!-- some examples are imb, anchor , etc --> 
+      <p>We can verify inline and block elements using CSS by their background colour.</p>
+
+      <a href="https://www.youtube.com/" style="background-color: brown;">youtube</a> |
+      <a href="https://chatgpt.com/">chatgpt</a>
+
+    
+     <!-- whereas, block elements take full line space irrespect what they needed . The remining space remins blank and the next elements will start from other line --> 
+      <!-- some examples are paragraph, heading tags , lists , tables etc --> 
+
+      <p style="background-color: blueviolet;">Hello guys , this is a line that will be used to verify wheather p tag is inline or block.</p> 
+      <br>
+
+      <ul style="background-color: bisque;">
+        <li>Hello</li>
+        <li>Arjun</li>
+        <li>Ram</li>
+      </ul> 
+
+      <table border="1" style="background-color: aqua;">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ashwani Sharms</td>
+                <td>21</td>
+            </tr> 
+            <tr>
+                <td>Salman Khan</td>
+                <td>58</td>
+            </tr>
+        </tbody>
+      </table>  
+
+      <!-- Now we will see How we can convert block elements to inline elements -->
+
+      <h1>Hello Programers</h1>
+      <p style="display: inline;">My name is Ashwani</p> 
+      <h2 style="display: inline;">This is a block element tag</h2>
+
+     
+</body>
+</html>

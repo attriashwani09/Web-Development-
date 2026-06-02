@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+}
+
+#first{
+    background-color: aquamarine;
+    /* display: inline; */
+    /* By display them as inline , thet will behave as inline elements */
+    height: 200px; 
+    width: 150px; 
+    margin: 50px; 
+} 
+
+#second{
+    background-color: chocolate; 
+    /* display: inline;  */
+    height: 150px;  
+    width: 250px; 
+    margin: 50px;  
+} 
+
+span{
+    background-color: greenyellow;  
+    /* display: block;   */
+    display: inline-block;
+    height: 150px;  
+    width: 250px;
+    margin: 20px;  
+     
+} 
+
+/* height and width only work in block eelements */ 
+/* In inline elemenets margin works for left and right but not for top and bottom */
+/* To use height, width in inline elements we have to display them as block elemeents */
+
+/* There is another propert that is : */
+/* * inline-bolck : The elements will remain or behave like inline elements but we can change it height and width and also use margin on it. */

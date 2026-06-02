@@ -1,0 +1,34 @@
+/* 1. FOnt weight  */ 
+/* it will cghange the thickness of letters */
+h1{
+    font-weight: 100;
+} 
+
+/* 2. FOnt style  and 3. font varient*/
+ul{
+    font-style: italic; 
+    font-variant:small-caps;
+} 
+
+/* 3. line height(helps to set the amount of space between next lines) */
+/* p{
+    line-height: 50px;
+} */
+
+/* 4. letter spacing and 5. Word spacing */
+/* determines the amonu of space betwwen fonts letters and words */ 
+p{
+    letter-spacing: 2px; 
+    word-spacing: 10px;
+} 
+
+/* 6. Text transform : it can trnasform the text into uppercase or lowecase and many more like capitalize , etc. */
+#first{
+    text-transform:uppercase;
+} 
+
+/* 7. font strech */
+p.condensed {
+  font-stretch: condensed;
+}
+

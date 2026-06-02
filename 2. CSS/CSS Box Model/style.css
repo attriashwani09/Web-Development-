@@ -1,0 +1,50 @@
+h2{
+    background-color: blanchedalmond; 
+    width: 50vw; 
+    height: 50vh;
+    border-width: 5px;
+    border-style: solid;
+    border-color: brown; 
+    /* Border ke sides ko round krne k liye border radius ka use krenge */
+    border-radius: 40px; 
+    padding: 20px;
+} 
+
+ul{
+    background-color: chocolate;  
+    /* border-width: 10px; */
+    /* border-width: 10px 20px;  */ 
+    /* border-width: 10px 20px 30px; */
+    border-width: 10px 20px 30px 40px;
+    border-color: black;
+    border-style: solid;
+    
+}    
+
+
+/* border-width 1 value: it would be allocated to all 4v side (all sides have same baorder value) */
+
+/*Border-width 2 values : If we mention 2 value in border width then the 1 st value would be allocated to top and bottom  , and second value would be allocated to left and right*/
+
+/*Border-width 3 values : If we mention 3 value in border width then the 1 st value would be allocated to top , and second value would be allocated to left and right and 3rd value would be allocated to bottom*/
+
+/*Border-width 4 values : If we mention 4 value in border width then the 1 st value would be allocated to top , and second value would be allocated to right and 3rd value would be allocated to bottom and 4th to left. */
+
+/* Values would be allocated in clockwise direction */ 
+
+/* we can perform similar opeartion for [adding and margin too. */
+
+
+/* p{  
+    border-width: 3px;
+    border-color: blue;
+    border-style: solid; 
+    padding: 15px;
+} */
+
+p{ 
+    /* Here, only left side border will appear */
+    border-left-width: 15px;
+    border-left-color: blue;
+    border-left-style: solid;
+}

@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    background-color: aqua;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 150px;
+    width: 150px;
+    border: solid 5px black;
+    margin: 5px;
+}
+
+.box1{
+    background-color: red;
+    /* order: 3; */
+    align-self: self-start;
+} 
+
+.box2{
+    background-color: greenyellow;
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+} 
+
+.box3{
+    background-color: orange;
+    /* flex-grow: 2; */
+    /* flex-basis: 400px; */
+    align-self: flex-end;
+} 
+
+.box4{
+    background-color: bisque; 
+    /* order: -3;  */
+}  
+
+/* Flex Items */
+/* 1. Order : it helps us in organizing the elements of the cntainer.  */
+/* default order is 0. */
+/* -ve order (means) lower the order comes at begining of container */
+/* higher order value (+ve) comes at the end of the container*/
+
+/* 2. Flex-grow: element size grows if extra space is present  */
+
+/* 3. Flex-shrink  */
+/* Default flex-shrink value is 1 */
+
+/* 4. flex-basics */
+
+/* 5. align-self */

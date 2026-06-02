@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    height: 100vh;
+    width: 100vw;
+} 
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.orbit{
+    /* background-color: green; */
+    height: 200px;
+    width: 200px;
+    position: relative;
+    
+} 
+
+.sun{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+} 
+
+
+.mercury{
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: mer 3s linear infinite;
+    position: absolute;
+}  
+
+@keyframes mer {
+    
+    from{
+        transform: rotate(0deg) translate(150px);
+    }
+    to{
+        transform: rotate(360deg) translate(150px);
+    }
+} 
+
+.venus{
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ven 4s linear infinite;
+    position: absolute;
+}  
+
+@keyframes ven {
+    
+    from{
+        transform: rotate(0deg) translate(200px);
+    }
+    to{
+        transform: rotate(360deg) translate(200px);
+    }
+} 
+
+.earth{
+    height: 70px;
+    width: 70px;
+    background-color: skyblue;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ear 5s linear infinite;
+    position: absolute;
+}  
+
+@keyframes ear {
+    
+    from{
+        transform: rotate(0deg) translate(300px);
+    }
+    to{
+        transform: rotate(360deg) translate(300px);
+    }
+}
+
+.mars{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(235, 135, 135);
+    border-radius: 50%;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: mar 5.5s linear infinite;
+    position: absolute;
+}  
+
+@keyframes mar {
+    
+    from{
+        transform: rotate(0deg) translate(380px);
+    }
+    to{
+        transform: rotate(360deg) translate(380px);
+    }
+}
+

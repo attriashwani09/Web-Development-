@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    height: 100vh;
+    width: 100vw;
+} 
+
+.container{
+    height: 100%;
+    background-color: gray;
+    display: grid; 
+    padding: 3rem;
+    gap: 1rem; 
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr); 
+
+
+    /* 2nd method to crate a grid */
+    /* grid-template-areas: 
+    "box1 box2 box2 box3"
+    "box1 box4 box5 box6"
+    "box1 box7 box8 box6"; */
+} 
+
+.box{
+    background-color: green;
+    font-size: 2rem;
+} 
+
+.box1{
+    grid-row: 1/4;
+} 
+
+.box2{
+    grid-column: 2/4;
+} 
+
+.box6{
+    grid-row: 2/4;
+    grid-column: 4/5;
+} 
+
+.box3 , .box5 , .box7{
+    background-color: red;
+} 
+
+.box4 , .box8{
+    background-color: orange;
+} 
+
+
+
+/*2nd method to crate grid by grid template area  */
+/* just name all the boxes by graid area */
+/* then use that names in template */
+/* 
+.box1{
+    grid-area: box1;
+}
+
+.box2{
+    grid-area: box2;
+} 
+
+.box3{
+    grid-area: box3;
+} 
+
+.box4{
+    grid-area: box4;
+} 
+
+.box5{
+    grid-area: box5;
+} 
+
+.box6{
+    grid-area: box6;
+} 
+
+.box7{
+    grid-area: box7;
+} 
+
+.box8{
+    grid-area: box8;
+} */

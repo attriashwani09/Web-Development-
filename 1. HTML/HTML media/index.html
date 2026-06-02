@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- HTML media practise --> 
+     <audio src="./song1.mpeg" controls></audio> 
+     <br>
+
+     <!-- another way to add song -->
+      <audio controls>
+        <source src="./song2.mpeg" type="" > 
+        <!-- in this way we can add another song for sam tag. It will play in the case the first one does not load -->
+         <!-- <source src="./song1.mpeg" >  -->
+         <!-- we can also give a message here , if audio fails to laod then that message will pop up -->
+          audio failed to load
+      </audio> 
+      <br>
+
+      <!-- HtML video  --> 
+       <video src="./vid1.mp4" controls height="300"></video> 
+
+       <!-- Another way (we can also use the 2nd way like we used in audio for video too) -->
+
+       <video controls height="300" >
+        <source src="./vid2.mp4" type="" >
+       </video> 
+
+       <!-- Adding Youtube videos in web --> 
+        <!-- To add a video we have to use iframe and in src we have to provide embeded link -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/So7lVjQl0wI?si=HFwBx3rVgbDyC2Jh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+
+        <iframe src="https://www.youtube.com/embed/-LnIe6KYD6M" frameborder="0"></iframe>
+</body>
+</html>

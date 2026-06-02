@@ -1,0 +1,36 @@
+h1{
+    /* text-transform: lowercase; */
+    /* text-transform: uppercase; */
+    /* text-transform: capitalize; */
+} 
+
+p{
+    /* text-indent: 100px; */
+
+    /* letter-spacing: 2px; */
+
+    /* line-height: 1.5; */
+    /* line-height: 24px; */
+    /* line-height: 150%; */
+
+    /* word-spacing: 10px; */
+
+    /* white-space: nowrap; */
+    
+
+} 
+
+/* Text-transform */
+/*  text-transform: lowercase , lowercase , capitalize */
+
+/* Text Spacing */
+/* 1. text-indent */
+/* Provides space on starting of 1st line */
+
+/* 2.letter spacing */
+
+/* 3. line height */
+
+/* 4. Word spacing */
+
+/* 5. White spacing */

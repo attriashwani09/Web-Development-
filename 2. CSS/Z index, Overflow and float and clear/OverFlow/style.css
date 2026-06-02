@@ -1,0 +1,16 @@
+.container{
+    height: 400px;
+    width: 300px;
+    background-color: aqua;
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto;
+} 
+
+/* Overflow occurs when the content does not fix in css box of that element */
+
+/* TYpes Of OverFlow */
+/* 1. visible : IT is by default. All the conetnt that is unable to fit in the box would proble leak but it is still visible to us*/
+/* 2. Hidden : All the extra content becomes hidden from the front page */
+/* 3. Scroll : it would give us a scroll bar to see the extra Content that does not able to fix in the box. */
+/* 4. auto : Auto hepls in managing the overflow. It checks if the content fits in the box . If not then it would give us a scroll bar . */

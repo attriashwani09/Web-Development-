@@ -1,0 +1,36 @@
+h1{
+    text-shadow: 10px 5px 5px red;
+} 
+
+body{
+    background-color: gray;
+}
+
+p{
+    /* text-shadow: 5px -10px 3px blue; */
+    /* text-shadow: 5px 5px 4px black; */
+
+    /* neon style shadow */
+    /* text-shadow: 0px 0px 10px cyan; */
+
+    /* Multiple shadow for glowing efect */
+    text-shadow: 0px 0px 5px red , 0px 0px 10px orange, 0px 0px 20px yellow;
+}
+/* text-shadow
+
+Adds shadow effects to text characters.
+
+Syntax:
+
+text-shadow: offset-x offset-y blur-radius color;
+
+
+Parameters:
+
+offset-x → Horizontal distance of the shadow
+
+offset-y → Vertical distance of the shadow
+
+blur-radius (optional) → How soft or blurry the shadow appears
+
+color → Shadow color */

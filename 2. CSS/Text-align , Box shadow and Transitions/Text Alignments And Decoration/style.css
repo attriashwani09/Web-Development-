@@ -1,0 +1,83 @@
+.container{
+    background-color: aqua;
+    /* Default left */
+    /* text-align: left; */
+    /* text-align: right; */
+    /* text-align: center; */
+
+} 
+
+h1,button{
+    background-color: red;
+}  
+
+p{
+    background-color: orange;
+    /* text-align: justify; */
+
+    /* text-align-last: left; */
+    /* text-align-last: right; */
+    /* text-align-last: center; */
+    /* text-align-last: justify; */
+
+} 
+
+h2{
+    /* direction: ltr; */
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+
+span{
+    /* vertical-align: sub; */
+    /* vertical-align: super; */
+    /* vertical-align: baseline; */
+} 
+
+h3{
+    /* text-decoration: overline; */
+    /* text-decoration: underline; */
+    /* text-decoration: line-through; */
+    /* text-decoration: overline underline;
+    text-decoration-color: red;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 5px; */
+}
+
+
+
+/* Text Alignments And Directions */
+
+/* Text Alignment */
+/* 1. text-align: left , right , center , justify */
+/* works on the text of the element (if the element is block) */
+/* If the element is inline , then it would position the whole element */
+
+/* 2. text-align-last: left , right , center , justify*/
+/* Works on the text of last line of elements */
+
+/* 3. direction : ltr , rtl */
+/* ltr means left to right and rtl means right to left. */
+/* take example of urdu language */
+
+/* 4. unicode-bidi: bidi-override; */
+/* It works when the direction is rtl */
+/* it converts the words into reverse order */
+/* like HELLO become OLLEH */
+/* Ashwani becomes inawhsA */
+
+/* 5. vertcal align : baseline , sub , super */
+
+
+
+
+/* Text Decoration */
+/* 1.Text-decoration : overline , underline , line-through, overline underline */
+/* Provides any underline or overline as required */
+
+/* 2. Text-decoration-color */
+
+/* 3. text-decoration-style */
+
+/* 4. text-decoration-thickness */

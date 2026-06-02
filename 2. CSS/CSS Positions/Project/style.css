@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+}
+
+header{
+    background-color: blanchedalmond;
+    position: fixed;
+    width: 100%;
+
+} 
+
+main{
+    padding-top: 40px;
+}

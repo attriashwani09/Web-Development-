@@ -1,0 +1,37 @@
+/* 5. Grouping Selectors */
+/* p,ul{
+    color: red;
+    background-color: skyblue;
+}  */
+
+/* 6. decendant selector */ 
+/* In decendant selector ,it does not matter if the p tag child or grandchild or more. this selector will search for every possible of p inside div tag and style on all of them at once. */ 
+/* The color of both the para would get changed */
+/* div p{
+    color: lightblue;
+    background-color: red;
+} */
+
+
+/* 7. Child selectors */
+/* This selector will only work on the 2nd p tag of div container beacuse the 1st p is grandchild. It only work on its children only */
+/* to use this selector just add > in between parent and child element/classes */
+div>p {
+    color: lightblue;
+    background-color: red;
+}  
+
+/* 8. Id selector with class selector */
+#list.first{
+    color: blue;
+} 
+
+/* 9. Draggable and contenteditable attribute selector  */ 
+h2[draggable="true"]{
+    color: green;
+} 
+
+h3[contenteditable="true"]{
+    color: pink;
+}
+

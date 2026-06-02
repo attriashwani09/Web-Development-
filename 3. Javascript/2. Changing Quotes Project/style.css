@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    background-color: aliceblue; 
+    height: 100vh;
+    width: 100vw;
+} 
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}  
+
+.top{
+    width: 30rem;
+    border: 2px black solid;
+    background-color: white;
+}
+
+.first , .quote{
+    text-align: center;
+    padding: 15px;
+} 
+
+.quote{
+    height: 4rem;
+}

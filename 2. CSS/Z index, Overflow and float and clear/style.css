@@ -1,0 +1,39 @@
+.container{
+    background-color: aqua;
+    margin-left: 150px;
+    margin-top: 250px;
+} 
+
+.box{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+} 
+
+.Box1{
+    background-color: red;
+    position: relative;
+    left: 150px;
+    z-index: 6;
+} 
+
+.Box2{
+    background-color: blue;
+    position: relative;
+    top: 20px;
+    left: 25px; 
+    z-index: 3;
+} 
+
+.Box3{
+    background-color: greenyellow;
+    position: relative;
+    z-index: 7;
+} 
+
+.Box4{
+    background-color: orange;
+} 
+
+/* Z index do not work on static position */
+/* whichever element have higher z-index would come at top */

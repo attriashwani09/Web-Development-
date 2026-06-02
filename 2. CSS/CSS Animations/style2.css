@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body{
+    height: 100vh;
+    width: 100vw;
+} 
+
+.container{
+    height: 100%;
+    background-color: black;
+    padding: 4rem;
+    display:flex ;
+    align-items: center;
+} 
+
+.box{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: orange;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: movement;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* position: relative; */
+}  
+
+@keyframes movement {
+    0%{
+        transform: translate(0vw,0vh);
+    }
+    25%{
+        transform: translate(30vw,-30vh);
+    }
+    50%{
+        transform: translate(60vw,0vh);
+    }
+    75%{
+        transform: translate(30vw,30vh);
+    }
+    100%{
+        transform: translate(0vw,0vh);
+    }
+}

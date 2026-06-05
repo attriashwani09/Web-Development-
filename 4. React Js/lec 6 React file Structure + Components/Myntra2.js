@@ -1,29 +1,15 @@
-import React from "react"; 
+import React, { useState } from "react"; 
 import ReactDOM from "react-dom/client"; 
 import Header from "./src/Header"; 
-import Footer from "./src/Footer";  
-import Main from "./src/Main";  
-import arr from "./utils/Arr";   
+import Footer from "./src/Footer";    
+import arr from "./utils/Arr";    
+import Card from "./src/Card"
 
 
 
 
 
-// function SortCards(){
 
-//     for(let i = 0 ; i < arr.length -1 ; i++ ){
-
-//         for( let j= i+1 ; j < arr.length ; j++){
-
-//             if( Number(arr[i].price) > Number( arr[j].price) ){
-                
-//                 [arr[i] , arr[j]] = [arr[j] , arr[i]] ;
-//             }
-//         }
-//     }
-
-        
-// } 
 
 
 
@@ -38,11 +24,31 @@ const root = ReactDOM.createRoot(document.querySelector(".root")) ;
 //     SortCards() ;  
 
     
+ 
+// }) 
 
-// })
+console.log( arr ) ;
 
 
-function App(){
+function App(){  
+
+     let [ A , UpdateArr ] = useState( arr ) ;
+
+    function SortCards(){ 
+
+    A.sort( ( a , b) => Number(a.price) - Number(b.price) ) ; 
+    console.log( arr ) ;
+
+    UpdateArr([...A]) ;
+
+    }  
+
+
+    function above750(){
+        const B = arr.filter( (a) =>  Number(a.price) > 750 )
+
+        UpdateArr( B ) ;
+    }
 
     return ( 
 
@@ -50,7 +56,18 @@ function App(){
 
         <Header/>
         
-        <Main/>
+        <button id="sortButton" onClick={SortCards}>   Sort List   </button>  
+
+        <button id="above750" onClick={above750}> Above 750 </button>
+
+
+        <div className="main"  > 
+            {
+
+            A.map( (value , index ) => <Card key = {index}  cloth = {value.cloth}  offer = {value.offer} price = {value.price} />  ) 
+
+            }
+        </div> 
 
         <Footer/>
 

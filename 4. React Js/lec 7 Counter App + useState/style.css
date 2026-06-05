@@ -1,0 +1,47 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+} 
+
+.root{
+    height: 100vh ;
+    width: 100vw; 
+    background-color: black;  
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+.container{
+    height: 250px; 
+    width: 350px;
+    background-color: pink;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column; 
+    border-radius: 20px;
+} 
+
+.output{
+    margin: 20px; 
+    background-color: aliceblue;
+    color: black ;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px; 
+    border-radius: 10px; 
+    border: 2px solid black;
+} 
+
+
+
+button{
+    margin: 10px;
+    padding: 10px; 
+    border-radius: 10px;
+}
+

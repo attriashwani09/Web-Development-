@@ -42,15 +42,15 @@ function App(){
 
     function Reset(){ 
 
-        if( refInterval.current != null ) {
+        
 
         clearInterval( refInterval.current ) ;   
-
-        refInterval.current = null;
+        
+        if( refInterval != null )
+            refInterval.current = null;
 
         setTime( 0 ) ; 
 
-        }
     }
 
     

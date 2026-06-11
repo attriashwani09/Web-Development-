@@ -1,0 +1,35 @@
+*{
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+} 
+
+
+h2{
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+.cards{
+
+    display: flex; 
+    font-size: 30px; 
+    flex-wrap: wrap; 
+    text-align: center;
+} 
+
+.cards div{
+    margin: 30px; 
+    border: 2px solid black;
+    padding: 15px; 
+    background-color: rgb(212, 131, 73);
+} 
+
+button{
+    height: 30px; 
+    width: 80px;
+    
+}

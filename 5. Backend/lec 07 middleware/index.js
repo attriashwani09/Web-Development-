@@ -8,9 +8,9 @@ const app = express() ;
 // middleware 1 
 app.use( "/home" , (req , res , next) =>{ 
 
-    console.log("Log stored")
+    console.log("Log stored : ")
 
-    res.send(` Event log : ${Date.now()}  ,  ${req.url}  , ${req.method}`) ;
+    console.log(` Event log :- Time :  ${Date.now()}  , Url :  ${req.url}  ,  Method : ${req.method}`) ;
 
     next() ;
 }) 
@@ -41,7 +41,7 @@ app.get( "/home" , (req , res ) =>{
 
     res.send("Response Sent ........... ") ;
 
-    next() ;
+   
 
 })
 

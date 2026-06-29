@@ -16,13 +16,24 @@ app.use( express.json() ) ;
 
 // Get req : to get the Full BookStore Info
 
-app.get( "/book" , (req , res) =>{ 
+app.get("/book", (req, res) => {
 
-    console.log( "BookStore Data Sent Successfully .......... ") ; 
+    const author = req.query.author;   // read query
 
-    res.send( BookStore ) ;
+    // If query exists → filter books
+    if (author) {
+        const books = BookStore.filter(
+            (value) => value.author === author
+        );
 
-})   
+        console.log("Filtered books sent...");
+        return res.send(books);
+    }
+
+    // If no query → send all books
+    console.log("Full BookStore sent...");
+    res.send(BookStore);
+});  
 
 
 
@@ -52,7 +63,58 @@ app.post( "/book" , ( req , res ) => {
     BookStore.push( newBook ) ; 
 
     res.send("Data Store Successfully ....... ") ;
+}) 
+
+
+app.patch( "/book" , (req , res) => {
+
+    const data = req.body ;  
+
+    const Book = BookStore.find( (value) => value.id === data.id ) ;
+
+    if( Book ){
+        Book.bookName = data.bookName ;
+    }
+
+    // console.log( data ) ; 
+
+    res.send( "Data Patched Successfully ......... ") ;
+}) 
+
+
+app.put( "/book" , (req , res ) => { 
+
+    const data = req.body ;  
+
+    const Book = BookStore.find( (value) => value.id === data.id ) ;
+
+    if( data.bookName ){
+        Book.bookName = data.bookName ;
+    } 
+
+    if( data.author ){
+        Book.author = data.author ;
+    }
+
+    // console.log( data ) ; 
+
+    res.send( "Data Putted Successfully ......... ") ;
+
 })
+
+
+app.delete( "/book" , ( req , res ) =>{
+    console.log( req.query) ; // we sent dlelte info in query 
+
+    const index = BookStore.findIndex( (value) => value.bookName === req.query.bookName ) ;
+
+    BookStore.splice( index , 1 ) ;
+
+    res.send("Data Deleted successfully ............. ");
+
+}) 
+
+
 
 
 

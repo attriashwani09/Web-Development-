@@ -37,7 +37,7 @@ app.use( express.json() ) ;
 //         next() ;
 //     }
 
-// }) 
+// })
 
 
 
@@ -109,6 +109,22 @@ app.delete( "/admin/:id" ,  Auth  ,  (req , res ) => {
         res.send("Food Item Not Fouund .............  ");
     }
 
+}) 
+
+
+
+
+// # Error Handling in middleware 
+
+app.get( "/dummy" , ( req , res ) => {
+
+    try{
+        JSON.parse("invalid Json");
+        res.send("Hello Ji ") ;
+    } 
+    catch{
+        res.send("Some Error Occured ...... ") ;
+    }
 })
 
 

@@ -58,7 +58,20 @@ authRouter.get("/UserInfo" , async (req , res) =>{
     catch( err ){
         res.send("Some error Occurred ........ " + err.message ) ;
     }
-})  
+})   
+
+
+
+authRouter.post("/logout" , (req , res ) => { 
+
+    try{ 
+    res.cookie("token" , null , {expires : new Date( Date.now() )}) ;
+    res.send("Logout Successfully .......... ") ;
+    }
+    catch( err ){
+        res.send("Some error Occurred .......... " + err.message ) ;
+    }
+})
 
 
 
